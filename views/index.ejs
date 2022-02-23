@@ -5,7 +5,35 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <!-- <% messages.forEach(function(message){ %>
+      <h1><%= messages.user %></h1>
+      <%= message.user %>
+    <% }); %> -->
+    <header>
+      <h1><%= title %></h1>
+      <p>Feel free to express what's on your mind!</p>
+    </header>
+    <main>
+      <div id="container">
+        <div id="btn-container">
+          <button>
+            New Message
+          </button>
+        </div>
+  
+        <!-- message section  -->
+        <section>
+          <!-- message cards  -->
+          <div class="message-cards">
+            <h3>Message Title</h3>
+            <p>Message Body</p>
+            <div>
+              <p>User</p>
+              <p>Date</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>

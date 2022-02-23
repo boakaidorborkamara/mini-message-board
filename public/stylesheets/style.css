@@ -1,8 +1,85 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ background-color: blanchedalmond;
 }
 
 a {
   color: #00B7FF;
 }
+
+
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      header{
+        background-color: blueviolet;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      }
+
+      header h1{
+        margin-bottom: 10px;
+        font-size: 4em;
+      }
+
+      header p{
+        font-size: large;
+      }
+
+      main{
+        display: flex;
+        justify-content: center;
+      }
+      #container{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        padding-top: 50px;
+      }
+
+      #btn-container{
+        text-align: center;
+      }
+
+      button{
+        width: 50%;
+        padding: 10px 5px 10px 5px;
+        font-size: 2em;
+        border: 1px solid blueviolet;
+        color: blueviolet;
+      }
+
+      button:hover{
+        cursor: pointer;
+        font-weight: bolder;
+      }
+
+      .message-cards{
+        /* width: 100%; */
+        background-color: white;
+        margin-top: 20px;
+        padding: 15px;
+      }
+
+      .message-cards h3{
+        color: blueviolet;
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      .message-cards p{
+        font-size:  1.5em;
+      }
+
+      .message-cards div{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid blueviolet;
+        margin-top: 20px;
+      }
+    
+    
