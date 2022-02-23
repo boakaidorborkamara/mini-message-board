@@ -5,10 +5,6 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <!-- <% messages.forEach(function(message){ %>
-      <h1><%= messages.user %></h1>
-      <%= message.user %>
-    <% }); %> -->
     <header>
       <h1><%= title %></h1>
       <p>Feel free to express what's on your mind!</p>
@@ -16,22 +12,25 @@
     <main>
       <div id="container">
         <div id="btn-container">
-          <button>
-            New Message
-          </button>
+          <a href="/new-message">
+            <button>New Message</button>
+          </a>
         </div>
   
         <!-- message section  -->
         <section>
           <!-- message cards  -->
-          <div class="message-cards">
-            <h3>Message Title</h3>
-            <p>Message Body</p>
-            <div>
-              <p>User</p>
-              <p>Date</p>
+          <% messages.forEach(function(message){ %>
+            <div class="message-cards">
+              <h3><%= message.title %></h3>
+              <p><%= message.content %></p>
+              <div>
+                <p><%= message.user_name %></p>
+                <p><%= message.date_adde %></p>
+              </div>
             </div>
-          </div>
+          <% }); %>
+         
         </section>
       </div>
     </main>
