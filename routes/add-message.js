@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/add-message', function(req, res, next) {
-  res.send('respond with a resource');
+  // res.send('Aad');
+  res.render('add-message');
 });
 
 module.exports = router;
