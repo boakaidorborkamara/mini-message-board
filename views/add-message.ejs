@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>
+      Message Board
+    </title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      input, button, textarea{
+        display: block;
+        width: 50vw;
+      }
+
+      input[type="submit"]{
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <!-- <h1></h1> -->
+      <h1>Message Board</h1>
       <p>Feel free to express what's on your mind!</p>
     </header>
     <main>
       <div id="container">
         <h1>Add Message</h1>
+        <form action="">
+          <input type="text" placeholder="Title">
+          <textarea name="" id="" cols="30" rows="10">Enter your message here.</textarea>
+          <input type="text" placeholder="Name">
+          <input type="submit" value="Post">
+        </form>
       </div>
     </main>
   </body>
