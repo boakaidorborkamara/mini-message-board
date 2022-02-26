@@ -24,10 +24,10 @@
     <main>
       <div id="container">
         <h1>Add Message</h1>
-        <form action="">
-          <input type="text" placeholder="Title">
-          <textarea name="" id="" cols="30" rows="10">Enter your message here.</textarea>
-          <input type="text" placeholder="Name">
+        <form method="POST" action="/add-message">
+          <input type="text" placeholder="Title" name="title">
+          <textarea name="content" id="" cols="30" rows="10">Enter your message here.</textarea>
+          <input type="text" placeholder="Name" name="user_name">
           <input type="submit" value="Post">
         </form>
       </div>
